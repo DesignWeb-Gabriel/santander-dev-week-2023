@@ -18,8 +18,11 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	// OpenAPI (Swagger) https://github.com/springdoc/springdoc-openapi
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+	// ModelMapper para conversão entre DTOs e Entities
+	implementation 'org.modelmapper:modelmapper:3.1.1'
 
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
